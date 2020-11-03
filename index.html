@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ManyaWebsite</title>
+    <title>Game</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BUILDS.json", {onProgress: UnityProgress});
+        UnityLoader.instantiate("gameContainer", "Build/game.json", {onProgress: UnityProgress});
     </script>
-	 <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -26,16 +26,10 @@
             height: 100%;
         }
     </style>
-	
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" ></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">ManyaWebsite</div>
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+<div class="webgl-content">
+    <div id="gameContainer"></div>
+</div>
+</body>
 </html>
